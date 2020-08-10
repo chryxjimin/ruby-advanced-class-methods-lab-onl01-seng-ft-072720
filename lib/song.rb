@@ -39,7 +39,19 @@ class Song
 
   def self.alphabetical
      self.all.sort_by {|x| x.name}
+  end
+
+  def self.new_from_filename(filename)
+     
      binding.pry
+  end
+
+  def self.create_from_filename
+
+  end
+
+  def self.destroy_all
+    @@all.clear = []
   end
 
   def self.all
